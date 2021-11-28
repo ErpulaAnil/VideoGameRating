@@ -1,1 +1,13 @@
 /* */
+.forget:hover{
+    text-decoration: underline;
+}
+.lf{
+    display: flex;
+    justify-content: space-between;
+}
+.forget{
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10px;
+}

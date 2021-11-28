@@ -6,6 +6,9 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { HeaderComponent } from './app.header';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ForgetComponent } from './forget-password/app.forget';
 
 @NgModule({
   declarations: [
@@ -13,11 +16,16 @@ import { RegisterComponent } from './register/register.component';
     HomePageComponent,
     RegisterPageComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    HeaderComponent,
+    ForgetComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
