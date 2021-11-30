@@ -1,25 +1,33 @@
-<app-header></app-header>
 <div class="container">
-    <div class="col-md-8 mx-auto">
-        <div class="card-header my-2">
-            <h2 class="text-primary">User Login</h2>
+  <div class="col-md-8 mx-auto">
+    <div class="card-header my-2">
+      <h2 class="text-primary">User Login</h2>
+    </div>
+    <form [formGroup]="form">
+      <div class="form-group">
+        <label for="email">Email Id</label>
+        <input formControlName="email" type="email" class="form-control" />
+        <div [hidden]="form.valid || !form.touched" class="alert alert-danger">
+          Enter Valid Email ID
         </div>
-        <form [formGroup]="form">
-            <div class="form-group">
-                <label for="email">Email Id</label>
-                <input formControlName="email" type="email" class="form-control">
-                <div [hidden]='form.valid ||!form.touched' class="alert alert-danger">Enter Valid Email ID</div>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control">
-                <div [hidden]='form.valid || !form.touched' class="alert alert-danger">Enter Valid Password</div>
-            </div>
-            <div class="form-group my-2 lf">
-                <button [disabled]='!form.valid' class="btn btn-primary">Login</button>
-                <span class="text-primary forget"> <a routerLink="/forget">forget Password ?</a> </span>
-            </div>
-
-        </form>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" />
+        <div [hidden]="form.valid || !form.touched" class="alert alert-danger">
+          Enter Valid Password
         </div>
+      </div>
+      <div class="form-group my-2 lf">
+        <!-- <button [disabled]='!form.valid' class="btn btn-primary" >Login</button> -->
+        <button type="submit" (click)="games()" class="btn btn-primary mt-3">
+          Login
+        </button>
+         <span class="text-primary forget">
+          <a routerLink="/forget">forget Password ?</a>
+        </span> 
+      </div>
+      <p>Dont have account? click here <a href="/games">Register</a></p>
+    </form>
+  </div>
 </div>

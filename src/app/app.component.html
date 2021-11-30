@@ -1,2 +1,57 @@
+<nav class="navbar navbar-expand-lg navbar-collapse">
+  <a class="navbar-brand" routerLink="/"><b>Games Arena</b></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    <ul class="navbar-nav mr-5">
+      <li class="nav-item">
+        <a class="nav-link" routerLink=""><b>Home</b> </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="About"><b>About</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="Mainpage"><b>Games</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="Reviews"><b>Reviews</b></a>
+      </li>
+
+      <div class="navbar__buttons">
+        <button
+          class="btn btn-outline-primary my-2 my-sm-0"
+          type="submit"
+          routerLink="login"
+        >
+          Sign in
+        </button>
+
+        <button
+          class="btn btn-outline-primary my-2 my-sm-0"
+          type="submit"
+          routerLink="register"
+        >
+          Sign Up
+        </button>
+      </div>
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-1 my-sm-" type="submit">Search</button>
+      </form> -->
+    
+    </ul>
+  </div>
+</nav>
 
 <router-outlet></router-outlet>
