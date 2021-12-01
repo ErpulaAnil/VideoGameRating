@@ -7,6 +7,7 @@ import { RegisterComponent } from './register/register.component';
 
 import { HeaderComponent } from './header/header.component';
 import { GamesComponent } from './games/games.component';
+import { AboueComponent } from './aboue/aboue.component';
 const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
@@ -17,6 +18,9 @@ const routes: Routes = [
   {
     path:'games',component:GamesComponent
   },
+  {
+    path:'About',component:AboueComponent
+  }
 
   
 
