@@ -10,6 +10,12 @@ import { ForgetComponent } from './forget-password/app.forget';
 
 
 import { GamesComponent } from './games/games.component';
+import { RateingComponent } from './rateing/rateing.component';
+import { GameDetailsComponent } from './game-details/game-details.component';
+import { ReviewsComponent } from './reviews/reviews.component';
+import { GameDetails1Component } from './game-details1/game-details1.component';
+import { GameDetails2Component } from './game-details2/game-details2.component';
+import { GameDetails3Component } from './game-details3/game-details3.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,13 @@ import { GamesComponent } from './games/games.component';
     ForgetComponent,
 
   
-    GamesComponent
+    GamesComponent,
+          RateingComponent,
+          GameDetailsComponent,
+          ReviewsComponent,
+          GameDetails1Component,
+          GameDetails2Component,
+          GameDetails3Component
   ],
   imports: [
     BrowserModule,
